@@ -2,62 +2,21 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#9e8a75" />
-  <title>Limina — коридор</title>
-  <script type="module" crossorigin src="./assets/index-CE810QZF.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-CMIzWzT3.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+  <meta name="theme-color" content="#d9d2da" />
+  <title>Limina — стеклянные шарики</title>
+  <!-- Yandex Games SDK (served by the Yandex host) -->
+  <script src="/sdk.js"></script>
+  <script defer src="./assets/index-i70pKhqU.js"></script>
 </head>
 <body>
   <div id="app">
     <canvas id="gl"></canvas>
-    <div id="ui">
-      <div id="cross"><i></i></div>
-      <div id="hitmark"><b></b><b></b><b></b><b></b></div>
-      <div id="nums"></div>
-      <div id="ammo"></div>
-      <div id="scope">
-        <div class="mask"></div>
-        <svg viewBox="-100 -100 200 200" aria-hidden="true">
-          <defs>
-            <radialGradient id="lens" r="0.5">
-              <stop offset="0.7" stop-color="#000" stop-opacity="0" />
-              <stop offset="0.97" stop-color="#140a1c" stop-opacity="0.55" />
-              <stop offset="1" stop-color="#000" stop-opacity="0.9" />
-            </radialGradient>
-          </defs>
-          <circle r="99" fill="url(#lens)" />
-          <circle r="98.4" fill="none" stroke="#d8b064" stroke-width="1.4" />
-          <circle r="95.6" fill="none" stroke="#f4dca0" stroke-opacity="0.35" stroke-width="0.4" />
-          <g stroke="#140c12" stroke-linecap="round">
-            <path d="M-99 0H-9M9 0H99M0 -99V-9M0 9V99" stroke-width="0.45" />
-            <path d="M-99 0H-58M58 0H99M0 58V99M0 -99V-58" stroke-width="2.4" />
-          </g>
-          <g stroke="#d8b064" stroke-width="0.5">
-            <path d="M-58 0H-52M52 0H58M0 52V58M0 -58V-52" />
-          </g>
-          <g fill="#d8b064">
-            <ellipse cx="-20" cy="0" rx="0.55" ry="2" /><ellipse cx="20" cy="0" rx="0.55" ry="2" />
-            <ellipse cx="-38" cy="0" rx="0.55" ry="2.8" /><ellipse cx="38" cy="0" rx="0.55" ry="2.8" />
-            <ellipse cx="0" cy="20" rx="2" ry="0.55" /><ellipse cx="0" cy="38" rx="2.8" ry="0.55" />
-          </g>
-          <path d="M-3.2 3.4 0 0.6 3.2 3.4" fill="none" stroke="#d8b064" stroke-width="0.55" />
-          <circle r="0.9" fill="#c79bff" />
-          <circle r="2.4" fill="none" stroke="#c79bff" stroke-opacity="0.35" stroke-width="0.3" />
-        </svg>
-      </div>
-      <div id="fps"></div>
-      <div id="hint">Это окно не отдаёт мышь игре: веди мышью — вид поворачивается, у края экрана докручивается сам. В Chrome мышь захватится полностью.</div>
-      <div id="start" class="screen">
-        <h1 class="title">LIMINA</h1>
-        <div class="subtitle">коридор</div>
-        <div class="enter">нажми, чтобы войти</div>
-        <div id="pane" class="pane">Панель Claude не даёт игре захватить мышь (и полный экран) — это запрет самого приложения.<br>Открой игру в Chrome: <span class="addr"></span> <button type="button">скопировать адрес</button></div>
-        <div class="keys">
-          <span><b>WASD</b> бег</span><span><b>Shift</b> быстрее</span><span><b>Пробел</b> прыжок</span><span><b>Ctrl</b> присед, в беге подкат</span><span><b>ЛКМ</b> / <b>F</b> выстрел</span><span><b>ПКМ</b> прицел</span><span><b>1</b> <b>2</b> <b>3</b> / колесо — оружие</span><span><b>O</b> обводка</span><span><b>R</b> перезарядка</span><span><b>Q</b> <b>E</b> наклон</span><span><b>Esc</b> пауза</span>
-        </div>
-      </div>
+    <div id="ui"></div>
+    <div id="boot">
+      <div class="boot-title">LIMINA</div>
+      <div class="boot-bar"><i></i></div>
     </div>
-  </div>
+  </div>
 </body>
 </html>
